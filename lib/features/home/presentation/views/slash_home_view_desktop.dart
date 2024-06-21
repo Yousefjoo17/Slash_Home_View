@@ -39,10 +39,7 @@ class SlashHomeViewDesktop extends StatelessWidget {
               children: [
                 ListHead(name: "Categories"),
                 SizedBox(height: 26),
-                Padding(
-                  padding: EdgeInsets.only(bottom: 20.0),
-                  child: CategoryListView(),
-                ),
+                CategoryListView(),
                 Expanded(
                   child: Row(
                     children: [
