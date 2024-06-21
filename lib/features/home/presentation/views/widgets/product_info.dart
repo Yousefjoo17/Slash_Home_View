@@ -8,38 +8,37 @@ class ProductInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: getResponisveSize(context, size: 90),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            "Stusish Kitchrm",
-            style: TextStyle(
-              fontSize: getResponisveSize(context, size: 12),
-            ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Stusish Kitchrm",
+          style: TextStyle(
+            fontSize: getResponisveSize(context, size: 12),
           ),
-          Row(
-            children: [
-              const Text(
-                "EGP 55",
-                style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        Row(
+          children: [
+            Text(
+              "EGP 55",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: getResponisveSize(context, size: 12)),
+            ),
+            const Spacer(flex: 2),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(99),
+              child: Image.asset(
+                AssetsData.i1,
+                width: getResponisveSize(context, size: 12),
+                fit: BoxFit.fill,
               ),
-              const Spacer(flex: 2),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(99),
-                child: Image.asset(
-                  AssetsData.i1,
-                  width: getResponisveSize(context, size: 12),
-                  fit: BoxFit.fill,
-                ),
-              ),
-              const Spacer(flex: 1),
-              const CustomAddIcon()
-            ],
-          )
-        ],
-      ),
+            ),
+            const Spacer(flex: 1),
+            const CustomAddIcon()
+          ],
+        )
+      ],
     );
   }
 }

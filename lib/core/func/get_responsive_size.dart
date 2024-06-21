@@ -4,7 +4,7 @@ import 'package:slashtask/constants.dart';
 double getResponisveSize(BuildContext context, {required double size}) {
   double scaleFactor = getScaleFactor(context);
   double resPonsiveSize = size * scaleFactor;
-  double lowerLimit = size * 0.8;
+  double lowerLimit = size * 0.1;
   double upperLimit = size * 1.2;
   return resPonsiveSize.clamp(lowerLimit, upperLimit);
 }

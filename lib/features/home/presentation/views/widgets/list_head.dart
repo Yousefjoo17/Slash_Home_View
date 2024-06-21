@@ -17,11 +17,14 @@ class ListHead extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        const Text(
+        Text(
           "See all",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: getResponisveSize(context, size: 16)),
         ),
-        const Icon(Icons.keyboard_arrow_right),
+        Icon(
+          Icons.keyboard_arrow_right,
+          size: getResponisveSize(context, size: 28),
+        ),
       ],
     );
   }

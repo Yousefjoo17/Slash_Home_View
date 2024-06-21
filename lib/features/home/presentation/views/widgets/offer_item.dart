@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:slashtask/core/func/get_responsive_size.dart';
 import 'package:slashtask/core/utils/assets_data.dart';
 
 class OfferItem extends StatelessWidget {
@@ -10,14 +9,11 @@ class OfferItem extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 4),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(12), // Adjust the radius as needed
-        child: AspectRatio(
-          aspectRatio: 2.5 / 1,
-          child: Image.asset(
-            AssetsData.testImg,
-            width: getResponisveSize(context, size: 140),
-            fit: BoxFit.cover,
-          ),
+        borderRadius: BorderRadius.circular(32),
+        child: Image.asset(
+          AssetsData.testImg,
+          fit: BoxFit.fill,
+          // width: getResponisveSize(context, size: 80),
         ),
       ),
     );

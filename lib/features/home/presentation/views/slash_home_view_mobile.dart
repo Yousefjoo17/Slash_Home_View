@@ -4,12 +4,11 @@ import 'package:slashtask/features/home/presentation/views/widgets/custom_app_ba
 import 'package:slashtask/features/home/presentation/views/widgets/custom_fearures_bar.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_search_bar.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/list_head.dart';
-import 'package:slashtask/features/home/presentation/views/widgets/offers_list_view_row.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/products_list_view_row.dart';
-import 'package:slashtask/features/home/presentation/views/widgets/test.dart';
+import 'package:slashtask/features/home/presentation/views/widgets/custom_cursor_slider_offers.dart';
 
-class SlashHomeView extends StatelessWidget {
-  const SlashHomeView({super.key});
+class SlashHomeViewMobile extends StatelessWidget {
+  const SlashHomeViewMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +27,7 @@ class SlashHomeView extends StatelessWidget {
                         SizedBox(height: 16),
                         CustomSearchBar(),
                         SizedBox(height: 16),
-                        ImagesListViewBig(),
-                        OfferListViewRow(),
+                        CustomCursorSliderOffers(),
                         SizedBox(height: 16),
                         ListHead(name: "Categories"),
                         SizedBox(height: 8),
