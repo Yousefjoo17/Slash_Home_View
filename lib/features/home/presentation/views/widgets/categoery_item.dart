@@ -9,16 +9,25 @@ class CategoeryItem extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 4),
       child: AspectRatio(
-          aspectRatio: 1 / 1,
-          child: CircleAvatar(
-            radius: getResponisveSize(context, size: 34),
-            backgroundColor: const Color(0xff292929),
-            child: Image.asset(
-              AssetsData.c1,
-              width: getResponisveSize(context, size: 34),
-              fit: BoxFit.cover,
+        aspectRatio: 1 / 1.2,
+        child: Column(
+          children: [
+            CircleAvatar(
+              radius: getResponisveSize(context, size: 34),
+              backgroundColor: const Color(0xff292929),
+              child: Image.asset(
+                AssetsData.c1,
+                width: getResponisveSize(context, size: 34),
+                fit: BoxFit.cover,
+              ),
             ),
-          )),
+            Text(
+              "Fashion",
+              style: TextStyle(fontSize: getResponisveSize(context, size: 16)),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
