@@ -30,7 +30,7 @@ class CustomTextField extends StatelessWidget {
             color: const Color(0xff9B9B9B),
             fontSize: getResponisveSize(
               context,
-              size: 12,
+              size: 16,
             )),
         enabledBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: Color(0xffEEEEEE)),

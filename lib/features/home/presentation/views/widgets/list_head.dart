@@ -12,7 +12,7 @@ class ListHead extends StatelessWidget {
         Text(
           name,
           style: TextStyle(
-            fontSize: getResponisveSize(context, size: 28),
+            fontSize: getResponisveSize(context, size: 24),
             fontWeight: FontWeight.bold,
           ),
         ),

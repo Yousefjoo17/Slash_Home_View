@@ -5,7 +5,7 @@ double getResponisveSize(BuildContext context, {required double size}) {
   double scaleFactor = getScaleFactor(context);
   double resPonsiveSize = size * scaleFactor;
   double lowerLimit = size * 0.1;
-  double upperLimit = size * 1.2;
+  double upperLimit = size * 1.1;
   return resPonsiveSize.clamp(lowerLimit, upperLimit);
 }
 

@@ -3,8 +3,8 @@ import 'package:slashtask/core/func/get_responsive_size.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_location_icon.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_notification_icon.dart';
 
-class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({super.key});
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {

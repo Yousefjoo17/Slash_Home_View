@@ -23,7 +23,7 @@ class SlashHomeViewMobile extends StatelessWidget {
                   SliverToBoxAdapter(
                     child: Column(
                       children: [
-                        AppBarWidget(),
+                        CustomAppBar(),
                         SizedBox(height: 16),
                         CustomSearchBar(),
                         SizedBox(height: 16),
