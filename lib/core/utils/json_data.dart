@@ -1,4 +1,4 @@
-Map<String, List<Map<String,dynamic>>> jsonData = {
+Map<String, List<Map<String, dynamic>>> jsonData = {
   "bestSelling": [
     {
       "id": 1,
@@ -94,5 +94,37 @@ Map<String, List<Map<String,dynamic>>> jsonData = {
       "price": 25.99,
       "image": "assets/images/r2.jfif"
     }
-  ]
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Fashion",
+      "image": "assets/images/c1.jfif",
+    },
+    {
+      "id": 2,
+      "name": "Games",
+      "image": "assets/images/c2.jpg",
+    },
+    {
+      "id": 3,
+      "name": "Accessoiris",
+      "image": "assets/images/c3.jpg",
+    },
+    {
+      "id": 4,
+      "name": "Books",
+      "image": "assets/images/c4.jpg",
+    },
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "image": "assets/images/o1.jfif",
+    },
+    {
+      "id": 2,
+      "image": "assets/images/o2.jpg",
+    },
+  ],
 };
