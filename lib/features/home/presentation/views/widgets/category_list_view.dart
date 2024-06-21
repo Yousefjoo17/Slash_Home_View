@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:slashtask/core/func/get_responsive_size.dart';
 import 'package:slashtask/core/widgets/custom_error_widget.dart';
-import 'package:slashtask/features/home/presentation/view_models/cubit/products_cubit.dart';
+import 'package:slashtask/features/home/presentation/view_models/products_cubit/products_cubit.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/categoery_item.dart';
 
 class CategoryListView extends StatelessWidget {

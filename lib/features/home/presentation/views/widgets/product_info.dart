@@ -6,7 +6,7 @@ import 'package:slashtask/features/home/presentation/views/widgets/custom_add_ic
 
 class ProductInfo extends StatelessWidget {
   const ProductInfo({super.key, required this.productModel});
-final  ProductModel productModel;
+  final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,7 +26,7 @@ final  ProductModel productModel;
                   fontWeight: FontWeight.bold,
                   fontSize: getResponisveSize(context, size: 12)),
             ),
-            const Spacer(flex: 2),
+            const Spacer(flex: 4),
             ClipRRect(
               borderRadius: BorderRadius.circular(99),
               child: Image.asset(

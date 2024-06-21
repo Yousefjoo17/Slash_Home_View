@@ -20,7 +20,7 @@ class _CustomFavouriteIconState extends State<CustomFavouriteIcon> {
               });
             },
             child: CircleAvatar(
-              radius: getResponisveSize(context, size: 9),
+              radius: getResponisveSize(context, size: 8),
               backgroundColor: const Color(0xffEEEEEE),
               child: const FittedBox(
                 child: Icon(

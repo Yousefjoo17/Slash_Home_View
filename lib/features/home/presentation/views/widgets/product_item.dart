@@ -7,22 +7,31 @@ import 'package:slashtask/features/home/presentation/views/widgets/product_info.
 class ProductItem extends StatelessWidget {
   const ProductItem({Key? key, required this.productModel}) : super(key: key);
   final ProductModel productModel;
+
   @override
   Widget build(BuildContext context) {
+    double imageSize = getResponisveSize(context, size: 90);
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 4),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12), // Adjust the radius as needed
         child: AspectRatio(
-          aspectRatio: 0.7 / 1,
+          aspectRatio: 0.9 / 1,
           child: Column(
             children: [
               Stack(
                 children: [
-                  Image.asset(
-                    productModel.image,
-                    width: getResponisveSize(context, size: 90),
-                    fit: BoxFit.cover,
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(12), // Apply border radius to the image
+                    child: SizedBox(
+                      width: imageSize,
+                      height: imageSize,
+                      child: Image.asset(
+                        productModel.image,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
                   const Positioned(
                     top: 5,
@@ -33,7 +42,7 @@ class ProductItem extends StatelessWidget {
               ),
               ProductInfo(
                 productModel: productModel,
-              )
+              ),
             ],
           ),
         ),
