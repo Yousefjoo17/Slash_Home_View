@@ -11,7 +11,7 @@ class OfferItem extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(32),
         child: Image.asset(
-          AssetsData.testImg,
+          AssetsData.o1,
           fit: BoxFit.fill,
           // width: getResponisveSize(context, size: 80),
         ),

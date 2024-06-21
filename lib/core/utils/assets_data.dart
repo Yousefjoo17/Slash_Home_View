@@ -1,5 +1,5 @@
 class AssetsData {
-  static String testImg = "assets/images/offer1.jfif";
-  static String i1 = "assets/images/i1.jfif";
-  static String item1 = "assets/images/item1.jfif";
+  static String o1 = "assets/images/o1.jfif";
+  static String i1 = "assets/images/c1.jfif";
+  static String c1 = "assets/images/b1.jfif";
 }
