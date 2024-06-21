@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:slashtask/core/utils/assets_data.dart';
+import 'package:slashtask/features/home/data/models/offer_model.dart';
 
 class OfferItem extends StatelessWidget {
-  const OfferItem({Key? key}) : super(key: key);
-
+  const OfferItem({Key? key, required this.offerModel}) : super(key: key);
+  final OfferModel offerModel;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -11,7 +11,7 @@ class OfferItem extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(32),
         child: Image.asset(
-          AssetsData.o1,
+          offerModel.image,
           fit: BoxFit.fill,
           // width: getResponisveSize(context, size: 80),
         ),

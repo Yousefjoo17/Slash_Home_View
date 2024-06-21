@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:slashtask/features/home/data/models/product_type.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/category_list_view.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_cursor_slider_offers.dart';
@@ -50,7 +51,10 @@ class SlashHomeViewDesktop extends StatelessWidget {
                               padding: EdgeInsets.symmetric(horizontal: 16.0),
                               child: ListHead(name: "BestSelling"),
                             ),
-                            Expanded(child: ProductGridView()),
+                            Expanded(
+                                child: ProductGridView(
+                              productType: ProductType.bestSeller,
+                            )),
                           ],
                         ),
                       ),
@@ -61,7 +65,10 @@ class SlashHomeViewDesktop extends StatelessWidget {
                               padding: EdgeInsets.symmetric(horizontal: 16.0),
                               child: ListHead(name: "New Arrival"),
                             ),
-                            Expanded(child: ProductGridView()),
+                            Expanded(
+                                child: ProductGridView(
+                              productType: ProductType.newArrival,
+                            )),
                           ],
                         ),
                       ),
@@ -72,7 +79,10 @@ class SlashHomeViewDesktop extends StatelessWidget {
                               padding: EdgeInsets.symmetric(horizontal: 16.0),
                               child: ListHead(name: "for you"),
                             ),
-                            Expanded(child: ProductGridView()),
+                            Expanded(
+                                child: ProductGridView(
+                              productType: ProductType.recommended,
+                            )),
                           ],
                         ),
                       ),

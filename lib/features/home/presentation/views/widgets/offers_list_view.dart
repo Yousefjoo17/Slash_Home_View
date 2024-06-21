@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:slashtask/core/func/get_responsive_size.dart';
+import 'package:slashtask/features/home/data/models/offer_model.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/offer_item.dart';
 
 class OfferListView extends StatelessWidget {
@@ -13,7 +14,7 @@ class OfferListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 12,
         itemBuilder: (context, index) {
-          return const OfferItem();
+          return  OfferItem(offerModel: OfferModel(id: 5,image: "d"),);
         },
       ),
     );

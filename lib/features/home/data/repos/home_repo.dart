@@ -3,9 +3,9 @@ import 'package:slashtask/features/home/data/models/offer_model.dart';
 import 'package:slashtask/features/home/data/models/product_model.dart';
 
 abstract class HomeRepo {
-  List<ProductModel> getBestSellerProducts();
-  List<ProductModel> getNewProducts();
-  List<ProductModel> getRecommenedProducts();
-  List<CategoryModel> getCategories();
-  List<OfferModel> getOffers();
+  List<ProductModel> fetchBestSellerProducts();
+  List<ProductModel> fetchNewProducts();
+  List<ProductModel> fetchRecommenedProducts();
+  List<CategoryModel> fetchCategories();
+  List<OfferModel> fetchOffers();
 }

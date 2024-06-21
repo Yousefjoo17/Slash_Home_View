@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:slashtask/features/home/data/models/product_type.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/category_list_view.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_cursor_slider_offers.dart';
@@ -47,14 +48,14 @@ class SlashHomeViewTablet extends StatelessWidget {
                         CategoryListView(),
                         ListHead(name: "Best Selling"),
                         SizedBox(height: 8),
-                        ProductListView(),
+                        ProductListView(productType: ProductType.bestSeller),
                         SizedBox(height: 16),
                         ListHead(name: "New Arrival"),
                         SizedBox(height: 8),
-                        ProductListView(),
+                        ProductListView(productType: ProductType.newArrival),
                         SizedBox(height: 16),
                         ListHead(name: "Recommended For you"),
-                        ProductListView(),
+                        ProductListView(productType: ProductType.recommended),
                       ],
                     ),
                   ),

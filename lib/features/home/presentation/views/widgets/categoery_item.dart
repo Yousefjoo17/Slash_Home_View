@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:slashtask/core/func/get_responsive_size.dart';
-import 'package:slashtask/core/utils/assets_data.dart';
+import 'package:slashtask/features/home/data/models/category_model.dart';
 
 class CategoeryItem extends StatelessWidget {
-  const CategoeryItem({super.key});
+  const CategoeryItem({super.key, required this.categoryModel});
+  final CategoryModel categoryModel;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,13 +17,13 @@ class CategoeryItem extends StatelessWidget {
               radius: getResponisveSize(context, size: 34),
               backgroundColor: const Color(0xff292929),
               child: Image.asset(
-                AssetsData.c1,
+                categoryModel.image,
                 width: getResponisveSize(context, size: 34),
                 fit: BoxFit.cover,
               ),
             ),
             Text(
-              "Fashion",
+              categoryModel.name,
               style: TextStyle(fontSize: getResponisveSize(context, size: 16)),
             ),
           ],
