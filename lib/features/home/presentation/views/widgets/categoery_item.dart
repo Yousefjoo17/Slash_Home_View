@@ -14,7 +14,7 @@ class CategoeryItem extends StatelessWidget {
             radius: getResponisveSize(context, size: 34),
             backgroundColor: const Color(0xff292929),
             child: Image.asset(
-              AssetsData.i1,
+              AssetsData.c1,
               width: getResponisveSize(context, size: 34),
               fit: BoxFit.cover,
             ),

@@ -20,7 +20,7 @@ class ProductItem extends StatelessWidget {
               Stack(
                 children: [
                   Image.asset(
-                    AssetsData.c1,
+                    AssetsData.b1,
                     width: getResponisveSize(context, size: 90),
                     fit: BoxFit.cover,
                   ),

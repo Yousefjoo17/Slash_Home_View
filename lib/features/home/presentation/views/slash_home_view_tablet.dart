@@ -54,7 +54,7 @@ class SlashHomeViewTablet extends StatelessWidget {
                         SizedBox(height: 8),
                         ProductListView(),
                         SizedBox(height: 16),
-                        ListHead(name: "For you"),
+                        ListHead(name: "Recommended For you"),
                         ProductListView(),
                       ],
                     ),

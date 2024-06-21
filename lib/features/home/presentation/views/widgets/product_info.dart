@@ -29,7 +29,7 @@ class ProductInfo extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(99),
               child: Image.asset(
-                AssetsData.i1,
+                AssetsData.c1,
                 width: getResponisveSize(context, size: 12),
                 fit: BoxFit.fill,
               ),

@@ -73,7 +73,7 @@ class SlashHomeViewDesktop extends StatelessWidget {
                           children: [
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16.0),
-                              child: ListHead(name: "For you"),
+                              child: ListHead(name: "for you"),
                             ),
                             Expanded(child: ProductGridView()),
                           ],
