@@ -53,12 +53,3 @@ class CustomSearchBar extends StatelessWidget {
     );
   }
 }
-/*
-const Opacity(
-            opacity: .8,
-            child: Icon(
-              FontAwesomeIcons.magnifyingGlass,
-              size: 24,
-            ),
-          ),
-          */
