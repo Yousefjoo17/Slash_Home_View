@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:slashtask/features/home/data/models/product_type.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/category_list_view.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_app_bar.dart';
-import 'package:slashtask/features/home/presentation/views/widgets/custom_cursor_slider_offers.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_fearures_bar.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_search_bar.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/list_head.dart';
+import 'package:slashtask/features/home/presentation/views/widgets/offers.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/products_grid_view.dart';
 
 class SlashHomeViewDesktop extends StatelessWidget {
@@ -27,10 +27,9 @@ class SlashHomeViewDesktop extends StatelessWidget {
                   SizedBox(height: 32),
                   CustomSearchBar(),
                   Spacer(),
-                  CustomCursorSliderOffers(),
+                  Offers(),
                   Spacer(flex: 2),
                   CustomFeaturesBar(),
-                  Spacer(),
                 ],
               ),
             ),

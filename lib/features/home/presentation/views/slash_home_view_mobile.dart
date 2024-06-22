@@ -5,8 +5,8 @@ import 'package:slashtask/features/home/presentation/views/widgets/custom_app_ba
 import 'package:slashtask/features/home/presentation/views/widgets/custom_fearures_bar.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/custom_search_bar.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/list_head.dart';
+import 'package:slashtask/features/home/presentation/views/widgets/offers.dart';
 import 'package:slashtask/features/home/presentation/views/widgets/products_list_view.dart';
-import 'package:slashtask/features/home/presentation/views/widgets/custom_cursor_slider_offers.dart';
 
 class SlashHomeViewMobile extends StatelessWidget {
   const SlashHomeViewMobile({super.key});
@@ -28,7 +28,7 @@ class SlashHomeViewMobile extends StatelessWidget {
                         SizedBox(height: 16),
                         CustomSearchBar(),
                         SizedBox(height: 16),
-                        CustomCursorSliderOffers(),
+                        Offers(),
                         SizedBox(height: 16),
                         ListHead(name: "Categories"),
                         SizedBox(height: 8),
@@ -39,9 +39,7 @@ class SlashHomeViewMobile extends StatelessWidget {
                         SizedBox(height: 16),
                         ListHead(name: "New Arrival"),
                         SizedBox(height: 8),
-                        ProductListView(
-                          productType: ProductType.newArrival,
-                        ),
+                        ProductListView(productType: ProductType.newArrival),
                         SizedBox(height: 16),
                         ListHead(name: "Recommended For you"),
                         SizedBox(height: 8),
